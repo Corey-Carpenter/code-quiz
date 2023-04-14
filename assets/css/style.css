@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background-color: aliceblue;
+}
+
+button {
+    background-color: blueviolet;
+    color: black;
+    border-radius: 5px;
+    font-size: 2em;
+    padding: 15px 35px;
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+header {
+    text-align: center;
+}
+
+#title {
+    font-size: 3rem;
+}
+
+#main {
+    display: none;
+}
+
+#main.show {
+    display: block;
+}
+
+#top-page.hide {
+    display: none;
+}
