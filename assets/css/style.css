@@ -18,6 +18,10 @@ button {
     margin-top: 0.5em;
 }
 
+button:hover {
+    color: white;
+}
+
 header {
     text-align: center;
 }
