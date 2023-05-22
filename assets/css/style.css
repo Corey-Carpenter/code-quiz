@@ -1,43 +1,122 @@
+/* Body and Container Styling */
 body {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: flex-start;
-    background-color: aliceblue;
-}
-
-button {
-    background-color: blueviolet;
-    color: black;
+    padding: 20px;
+  }
+  
+  #quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
     border-radius: 5px;
-    font-size: 2em;
-    padding: 15px 35px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    font-size: 24px;
     text-align: center;
-    margin-top: 0.5em;
-}
-
-button:hover {
-    color: white;
-}
-
-header {
-    text-align: center;
-}
-
-#title {
-    font-size: 3rem;
-}
-
-#main {
-    display: none;
-}
-
-#main.show {
+    margin-bottom: 20px;
+  }
+  
+  /* Question and Choices Styling */
+  #question-container {
+    margin-bottom: 20px;
+  }
+  
+  label {
     display: block;
-}
-
-#top-page.hide {
+    margin-bottom: 10px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Game Over Container Styling */
+  #game-over-container {
     display: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* High Scores Styling */
+  #high-scores-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #high-scores-list li {
+    margin-bottom: 5px;
+  }
+  
+  /* Additional Styles */
+  .timer-container {
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  
+  
+#try-again-btn {
+    display: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #try-again-btn:hover {
+    background-color: #45a049;
+  }
+  
+  #try-again-btn:focus {
+    outline: none;
+  }
+  
+
+
+
+.question-ref {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
 }

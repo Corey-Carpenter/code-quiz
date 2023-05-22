@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Code Quiz</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Quiz</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <div id="quiz-container">
+    <h1>JavaScript Quiz</h1>
+    <div id="question-container"></div>
+    <div id="choices-container"></div>
+    <button id="start-btn">Start Quiz</button>
+    <div id="timer-container"></div>
+  </div>
+  <div id="game-over-container">
+    <h2>Game Over</h2>
+    <p>Your score: <span id="final-score"></span></p>
+    <input type="text" id="initials-input" placeholder="Enter your initials">
+    <button id="save-btn">Save Score</button>
+    <button id="try-again-btn" style="display: none">Try Again</button>
+  </div>
+  <ul id="high-scores-list"></ul>
+  <div class='question-ref'>Questions are taken from <a href='http://www.w3schools.com/' target='_blank'>W3Schools</a> tutorial quizzes.</div>
 
-    <header id="top-page">
-        <div id="title">Coding Quiz Challenge</div>
-        <button id="start-button">Start Quiz</button>
-    </header>
-
-    <main id="main">
-        <section>
-            <div class="quiz"></div>
-                <div class="how-to-play">Answer the coding related questions accurately within the provided time frame.
-                    <br> Know that any incorrect answers will penalize you by taking 10 seconds off the timer. </div>
-        </section>
-        <section>
-            <div id="game" class="quiz-container"></div>
-                <div class="timer">
-                    <div class="timer-count bigger-font">100</div>
-                    <h2>Time Remaining</h2>
-                </div>
-        </section>
-    </main>
-    
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
